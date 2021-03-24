@@ -1,0 +1,20 @@
+iframe  {
+    width: 966px;
+    height: 543px;
+}
+
+img  {
+    width: 100px;
+    height: 80px;
+}
+
+a   {
+    width: 50%;
+    font-size: 5rem;
+    line-height: 2rem;
+    color: #3a2e2e;
+}
+
+section  {
+    text-align: center;
+}
