@@ -22,9 +22,9 @@ window.addEventListener("scroll", function() {
         // 헤더 요소의 색을 원래대로 돌린다.
         headerEl.style.backgroundColor = 'linear-gradient(to bottom,rgba(16,24,32,.8),rgba(16,24,32,0))'
         // 로고를 보이게 처리하고,
-        menuOpenEl.style.display = 'block'
+        logoEl.style.display = 'block'
         // 대체 로고를 보이지 않게 처리한다.
-        logoEl.style.display = 'none'
+        logoE2.style.display = 'none'
         
     }
 })
