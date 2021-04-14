@@ -16,15 +16,19 @@ window.addEventListener("scroll", function() {
         logoEl.style.display = 'none'
         // 대체 로고를 보이게 처리한다.
         logoE2.style.display = 'block'
+        // 헤더 높이 변경
+        headerEl.style.height = '100px'
     }
     else {
         // 스크롤 위치가 100px 미만이면,
         // 헤더 요소의 색을 원래대로 돌린다.
-        headerEl.style.backgroundColor = 'linear-gradient(to bottom,rgba(16,24,32,.8),rgba(16,24,32,0))'
+        headerEl.style.backgroundColor = null
         // 로고를 보이게 처리하고,
         logoEl.style.display = 'block'
         // 대체 로고를 보이지 않게 처리한다.
         logoE2.style.display = 'none'
+        // 헤더 높이 변경
+        headerEl.style.height = null
         
     }
 })
