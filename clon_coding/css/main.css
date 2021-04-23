@@ -1,28 +1,49 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
 /* HEADER */
 
 header {
     width: 100%;
-    height: 150px;
+    height: 126.38px;
     background: linear-gradient(to bottom,rgba(16,24,32,.8),rgba(16,24,32,0)); 
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    z-index: 1;
+    transition: .4s;
+}
+div.header {
+    max-width: 1500px;
+    padding: 0 20px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
 }
 
+
 header img#logo {
-    width: 20%;
+    height: 7em;
+    width: 26.7em;
+    max-width: 300px;
     position: relative;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
     box-sizing: border-box;
+    margin: .67em 0;
+    transition: .4s;
 }
 
 header img#logo2 {
@@ -34,27 +55,59 @@ header img#logo2 {
     right: 0;
     margin: auto;
     display: none;
+    transition: .4s;
+}
+
+
+
+nav {
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: right;
+    margin: 0 0 0 120px;
+    padding: 0;
 }
 
 ul {
     position: relative;
     color: #f3f3f3;
     font-size: 20px;
-    line-height: 1.2em;
+    line-height: 1.5em;
     font-weight: 700;
     display: flex;
-    margin: auto;
+    margin: 0;
     float: left;
-    
+    text-align: right;
+    justify-content: flex-end;
+    padding: 0;
+    height: 100%;
+    align-items: flex-end
 }
 
+
+
 li {
+    list-style: none;
     margin: 0 20px;
+    padding: 0;
 }
 
 li.shop {
-    margin: 0px 0px 20px 0px;
+    float: left;
+    margin-right: -20px;
 }
+
+ul img#shop {
+    float: left;
+    margin-right: 20px;
+}
+
+header img#signup {
+    float: left;
+    margin: 0 0 0 0;
+}
+
 
 header img#shop {
     position: relative;
@@ -63,45 +116,84 @@ header img#shop {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0px 0px 0px 20px;
+    margin: 0px 50px 0px 20px;
     display: block;
 } 
 
 header img#signup {
     position: relative;
-    height: 20px;
+    height: 17px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 0 0 4px 0;
     display: block;
 } 
 
 /* body */
 
+body {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: block;
+}
+
+/* 메인 비디오 */
+div.video {
+    width: 100%;
+    height: 64em;
+    overflow: hidden;
+    position: relative;
+}
+
 video {
     display: block;
     width: 100%;
+    overflow: hidden;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
 }
 
-section.box1 {
-    padding: 11px 9px 7px;
-    line-height: 1.2;
-    display: flex;
-    max-width: 1500px;
-}
+/* Page */
 
-div {
-    flex-grow: 1;
-    flex-basis: 100px;
+div.page {
     display: block;
 }
 
-image.1 {
-    margin: 9;
+/* BOX1 */
+
+div.box1 {
+    max-width: 1500px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+section.blog {
+    padding: 11px 9px 7px;
+    display: flex;
+}
+
+
+div.one {
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 9px;
     width: 100%;
-    position: absolute;
+    float: left;
+}
+
+img.one {
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 1em;
 }
 
 h1 {
@@ -113,5 +205,6 @@ h1 {
     letter-spacing: normal;
     color: #3f464c;
     margin-bottom: 0;
-    padding: 0 20px;
+    width: 342.5px;
+    margin: 0;
 }
