@@ -8,7 +8,16 @@ html {
     font-size: 10px;
 }
 
-/* HEADER */
+/* body */
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: block;
+}
+
+/* 헤더 */
 
 header {
     width: 100%;
@@ -23,6 +32,7 @@ header {
     z-index: 1;
     transition: .4s;
 }
+
 div.header {
     max-width: 1500px;
     padding: 0 20px;
@@ -31,6 +41,7 @@ div.header {
     display: flex;
 }
 
+/* 로고 */
 
 header img#logo {
     height: 7em;
@@ -58,9 +69,9 @@ header img#logo2 {
     transition: .4s;
 }
 
+/* 메뉴 */
 
-
-nav {
+nav.main {
     box-sizing: border-box;
     flex-grow: 1;
     flex-shrink: 1;
@@ -85,8 +96,6 @@ ul {
     align-items: flex-end
 }
 
-
-
 li {
     list-style: none;
     margin: 0 20px;
@@ -102,12 +111,6 @@ ul img#shop {
     float: left;
     margin-right: 20px;
 }
-
-header img#signup {
-    float: left;
-    margin: 0 0 0 0;
-}
-
 
 header img#shop {
     position: relative;
@@ -131,16 +134,15 @@ header img#signup {
     display: block;
 } 
 
-/* body */
+/* Page */
 
-body {
-    width: 100%;
-    margin: 0 auto;
-    overflow-x: hidden;
+div.page {
     display: block;
 }
 
+
 /* 메인 비디오 */
+
 div.video {
     width: 100%;
     height: 64em;
@@ -157,15 +159,10 @@ video {
     top: 50%;
 }
 
-/* Page */
 
-div.page {
-    display: block;
-}
+/* 뉴스 박스 */
 
-/* BOX 1 */
-
-div.box1 {
+div.news-box {
     max-width: 1500px;
     padding: 0 20px;
     margin: 0 auto;
@@ -176,7 +173,6 @@ section.blog {
     padding: 11px 9px 7px;
     display: flex;
 }
-
 
 div.one {
     flex-grow: 1;
@@ -196,7 +192,7 @@ img.one {
     margin-bottom: 1em;
 }
 
-h1 {
+h1.one {
     font-size: 2em;
     font-weight: 400;
     font-style: normal;
@@ -367,7 +363,7 @@ div.video>h1 {
 /* explore 박스 */
 
 section.box4 {
-    height: 482px;
+    height: 613.6px;
     background-color: #f3f3f3;
     margin-top: 0px;
     padding: .8em 6.2em 5.2em;
@@ -382,10 +378,11 @@ section.box4>h1 {
     letter-spacing: 2px;
     text-align: center;
     color: #101820;
+    margin-top: 3.3em;
     width: 100%;
-    padding-top: 50px;
     left: 0;
     right: 0;
+    font-family: axiforma,Arial,Helvetica,sans-serif;
 }
 
 
@@ -413,20 +410,56 @@ div.fourth {
     height: 345px;
     overflow: hidden;
     object-fit: cover;
+    position: relative;
+}
+
+div.enemy {
+    z-index: 1;
+    background-color: #000;
+    padding: .56em .7em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: axiforma,Arial,Helvetica,sans-serif;
+}
+
+div.Doctor {
+    z-index: 1;
+    background-color: #000;
+    padding: .56em .7em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: axiforma,Arial,Helvetica,sans-serif;
 }
 
 div.fourth>img {
     vertical-align: middle;
-    position: relative;
+    position: absolute;
     overflow: hidden;
-    width: 100%;
     height: 345px;
     margin: 0;
     margin-bottom: 1em;
-    padding: 0 27px;
     object-fit: cover;
 }
 
+div.keep {
+    text-align: center;
+}
 
 a.keepex {
     box-sizing: border-box;
@@ -443,24 +476,33 @@ a.keepex {
     color: #0085ad;
     padding: 1em 1.9em .6em;
     outline-color: #0085ad;
-    left: 0;
-    right: 0;
 }
 
+/* sign up 박스 */
 section.box5 {
     font-style: normal;
     align-items: center;
     height: 402.39px;
+    padding: 30px 0 0 0;
+}
+
+div.signup-icon {
+    text-align: center;
+    padding: 50px 0 0 0;
+    margin-top: 2.8em;
 }
 
 img.signup {
-    height: 100px;
-    left: 0;
-    right: 0;
-    
+    height: 30px;
+    align-self: center;
 }
 
-div.signup>h1 {
+div.signup {
+    text-align: center;
+    line-height: 1.4em;
+}
+
+h1.signup {
     -webkit-text-size-adjust: 100%;
     color: #101820;
     font-family: axiforma,Arial,Helvetica,sans-serif;
@@ -472,7 +514,7 @@ div.signup>h1 {
     letter-spacing: .01133em;
     line-height: 1.4em;
     font-weight: 700;
-    margin-top: 2.2em;
+    margin-top: 66px;
     margin-bottom: -.2em;
 }
 
@@ -486,15 +528,205 @@ div.signup>p {
     font-size: 1.6em;
     line-height: 1.75em;
     text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
+a.buttonforsignup {
+    color: #0085ad;
+    outline: 0;
+    font-size: 16px;
+    letter-spacing: .208em;
+    line-height: 1.9em;
+    text-align: center;
+    font-weight: 800;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+/* 하단 */
+/* 노랑 */
 section.box6 {    
     background-image: url(https://www.doctorwho.tv/brand/assets/images/watch-component/img-yellowbg.jpg);
     height: 387px;
-
+    background-size: cover;
 }
 
-section.box7 {
+div.box6 {
+    max-width: 1500px;
+    padding: 9.4em 19px 8.8em;
+    margin: 0 auto;
+}
+
+div.box6main {
+    flex-basis: 100%;
+    float: left;
+    margin: 0 9px;
+    width: 724.656px;
+}
+
+div.box6main>h1 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: .6em;
+    color: #101820;
+}
+
+div.box6main>h2 {
+    font-size: 6em;
+    line-height: 1.3em;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: -.25em;
+    color: #101820;
+}
+
+div.box6main>h3 {
+    font-size: 2em;
+    line-height: 1.5;
+    color: #3f464c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.box6blank {
+    float: left;
+    margin: 0 9px;
+    width: 379px;
+    height: 205px;
+    background-color: transparent;
+}
+
+div.box6sub {
+    float: left;
+    margin: 0 9px;
+    height: 205px;
+    width: 304.34px;
+}
+
+div.box6sub>h1 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: .6em;
+    color: #101820;
+}
+
+div.box6sub>h3 {
+    font-size: 2em;
+    line-height: 1.5;
+    color: #3f464c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* footer */
+
+section.footer {
     background-color: #101820;
     height: 216px;
+}
+
+div.footer {
+    max-width: 1500px;
+    padding: 56px 20px 0 20px;
+    margin: auto;
+}
+
+img#footer-logo {
+    width: 133px;
+    float: left;
+    margin: 0 9px;
+}
+
+nav.footer-menu1 {
+    color: #d9d9d6;
+    font-size: 1.3em;
+    line-height: 1.38462em;
+    float: left;
+    padding-left: 280px;
+}
+
+nav.footer-menu1>span {
+    margin: 0 0 0 20.8px;
+}
+
+nav.footer-menu2 {
+    color: #d9d9d6;
+    font-size: 1.3em;
+    line-height: 1.38462em;
+    float: left;
+}
+
+nav.footer-menu2>a {
+    margin: 0 4.2em 0 4em;
+}
+
+nav.footer-menu3 {
+    float: left; 
+}
+
+nav.footer-menu3>a {
+    margin: 0 0 0 10px;
+}
+
+nav.footer-menu3>a>img {
+    width: 24px;
+}
+
+div.row-lower {
+    width: 1500px;
+    padding-top: 1.9em;
+    padding-bottom: 2.8em;
+    margin: 0 -17.5px;
+    line-height: 1.4;
+    opacity: .5;
+    text-align: justify;
+    display: flex;
+}
+
+div.lower1 {
+    margin: 0 17.5px;
+    flex-basis: 33.33333%;
+}
+
+div.lower1>p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f3f3f3;
+    
+}
+
+div.lower2 {
+    margin: 0 17.5px;
+    flex-basis: 33.33333%;
+}
+
+div.lower2>p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f3f3f3;
+}
+
+div.lower3 {
+    margin: 0 17.5px;
+    flex-basis: 33.33333%;
+}
+
+div.lower3>p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f3f3f3;
 }
